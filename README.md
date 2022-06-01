@@ -1,7 +1,5 @@
 # hallo shop
 
-A new Flutter project.
-
 ## Introduction 
 hallo shop is online trading system  . hallo shop focuses on electronics products
 
