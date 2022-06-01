@@ -7,7 +7,7 @@ hallo shop is online trading system  . hallo shop focuses on electronics product
 ### Home Page
 ![alt home](https://github.com/mrnpro/Halloo-Ecomerce-app/blob/main/hallo%20screenshot/homepage)
 ### Detail Page
- 
+ - [clone repository](https://github.com/mrnpro/Halloo-Ecomerce-app.git)
 - clone repository
 ``` git clone https://github.com/mrnpro/Halloo-Ecomerce-app ```
 - [setup firebase](https://firebase.google.com/docs/cli)
