@@ -3,7 +3,7 @@
 ## Introduction 
 hallo shop is online trading system  . hallo shop focuses on electronics products
 
-##Screenshot 
+## Screenshot 
 ### Home Page
 ![alt home](https://github.com/mrnpro/Halloo-Ecomerce-app/blob/main/hallo%20screenshot/homepage)
 ### Detail Page
