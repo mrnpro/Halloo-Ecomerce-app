@@ -10,8 +10,11 @@ class Wrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //checks for the user if authenticated or not 
     return AuthState().check()
-        ? FutureBuilder(
+        ? 
+      //check if the user is not new to the system
+      FutureBuilder(
             future: Db().isUserProfile(),
             builder: ((context, AsyncSnapshot<bool> snapshot) {
               if (snapshot.hasData) {
@@ -25,6 +28,6 @@ class Wrapper extends StatelessWidget {
               }
               return const Text("");
             }))
-        : const WelcomePage();
+        : const WelcomePage();//redirect if the user is not authenticated before 
   }
 }
