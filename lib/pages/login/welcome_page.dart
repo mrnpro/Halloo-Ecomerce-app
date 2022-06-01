@@ -18,8 +18,9 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomePageState extends State<WelcomePage> {
   final _formKey = GlobalKey<FormState>();
+  //checks if the user pressed the login button
   var _isPressed = true;
-
+  //pin theme for pin textfield
   final pinTheme = PinTheme(
       width: 40,
       height: 40,
@@ -140,7 +141,7 @@ class _WelcomePageState extends State<WelcomePage> {
     );
   }
 }
-
+//sms input 
 class SMSInput extends StatelessWidget {
   const SMSInput({
     Key? key,
@@ -165,7 +166,7 @@ class SMSInput extends StatelessWidget {
     );
   }
 }
-
+//phone number textfield
 class PhoneNumber extends StatelessWidget {
   const PhoneNumber({
     Key? key,
