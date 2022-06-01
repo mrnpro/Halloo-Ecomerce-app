@@ -16,9 +16,16 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   final _formKey = GlobalKey<FormState>();
+  //name 
   TextEditingController name = TextEditingController();
-
+  // choosen value index from the drop down option
   int? choosenValue;
+  
+  //helps us extract information and return which one shold be the role when called 
+  /*
+  * eg .. if the user selects seller role the choosenValue will be 1 so if role() method is called it will return seller string 
+  */
+  
   role() {
     switch (choosenValue) {
       case 1:
@@ -27,7 +34,7 @@ class _SignUpState extends State<SignUp> {
         return "Buyer";
     }
   }
-
+  //initializing DB .. database 
   Db db = Db();
   @override
   Widget build(BuildContext context) {
@@ -55,6 +62,7 @@ class _SignUpState extends State<SignUp> {
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     children: [
+                      //name textformfield
                       TextFormField(
                         controller: name,
                         decoration: const InputDecoration(
@@ -69,6 +77,8 @@ class _SignUpState extends State<SignUp> {
                             labelText: 'Name',
                             labelStyle: TextStyle(color: kprimary)),
                       ),
+                      
+                      //drop down option for role
                       Container(
                         width: 500,
                         margin: const EdgeInsets.only(top: 20),
@@ -95,12 +105,17 @@ class _SignUpState extends State<SignUp> {
                     ],
                   ),
                 )),
+            
+            //submit button 
             CustomButton(
               text: "Sign UP",
               onPressed: () {
+                //pushing the role of the user and name of the user to usersignup method 
                 db.userSignUp(role(), name.text).whenComplete(() => db
                     .isUserProfile()
-                    .then((value) => Navigator.push(context,
+                    .then((value) => 
+                          //navigate to the wrapper to check if there is no error happend and if the user should  ready to be on Home page
+                          Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
                           return const Wrapper();
                         }))));
