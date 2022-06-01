@@ -4,7 +4,10 @@
 hallo shop is online trading system  . hallo shop focuses on electronics products
 
 ##Screenshot 
-![alt home](https://github.com/mrnpro/Halloo-Ecomerce-app/blob/main/hallo%20screenshot/homepage)![alt home](https://github.com/mrnpro/Halloo-Ecomerce-app/blob/main/hallo%20screenshot/homepage)
+### Home Page
+![alt home](https://github.com/mrnpro/Halloo-Ecomerce-app/blob/main/hallo%20screenshot/homepage)
+### Detail Page
+![alt home](https://github.com/mrnpro/Halloo-Ecomerce-app/blob/main/hallo%20screenshot/detailpage)
  
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
