@@ -12,6 +12,7 @@ import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({Key? key, required this.index}) : super(key: key);
+  // index here helps us to know which bottom item is the page want
   final int index;
   @override
   State<BottomNavigation> createState() => _BottomNavigationState();
@@ -20,6 +21,7 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
+    //custom navigation to minimize the code / to make it easy to code :)
     _customNav(Widget destination) {
       Navigator.pushAndRemoveUntil(
         context,
@@ -29,6 +31,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     }
 
     return FutureBuilder<DocumentSnapshot>(
+     
       future: Db().userec.doc(AuthState().auth.currentUser!.uid).get(),
       builder: (context, AsyncSnapshot snapshot) => SalomonBottomBar(
         currentIndex: widget.index,
