@@ -9,7 +9,7 @@ hallo shop is online trading system  . hallo shop focuses on electronics product
 
 
 ### How to install 
- - [clone repository](https://github.com/mrnpro/Halloo-Ecomerce-app.git)
+ - [Repository](https://github.com/mrnpro/Halloo-Ecomerce-app.git)
 - clone repository
 ``` 
 git clone https://github.com/mrnpro/Halloo-Ecomerce-app 
@@ -27,8 +27,8 @@ service firebase.storage {
   }
 ```
 - run the project through actual devices 
-## How to install flutter 
-  - [clone repository](https://github.com/mrnpro/Halloo-Ecomerce-app.git)
+## How to use flutter 
+   
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
